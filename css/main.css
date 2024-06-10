@@ -38,12 +38,11 @@ header{
 }
 
 nav{
-  border: 1px solid #333;
   border-radius: 10px 10px 0 0;
   width: calc(100% - 200px);
   margin: 20px;
   text-align: center;
-  background: #ebebeb;
+  background: #ffebfa;
 }
 nav ul{
   display: flex;
