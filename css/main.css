@@ -10,12 +10,7 @@
   font-family: "맑은 고딕";
   color: #333;
 }
-h2{
-  background: #cacaca;
-  display: inline;
-  padding: 10px;
-  border-radius: 10px 10px 0 0;
-}
+
 a{
   display: block;
 }
@@ -26,13 +21,13 @@ main{
 }
 header{
   display: flex;
-  height: 100px;
+  height: 80px;
 }
 .logo{
   width: 200px;
 }
 .logo img{
-  height: 100px;
+  height: 80px;
   width: 100%;
   object-fit: fill;
 }
@@ -40,7 +35,7 @@ header{
 nav{
   border-radius: 10px 10px 0 0;
   width: calc(100% - 200px);
-  margin: 20px;
+  margin: 10px 20px;
   text-align: center;
   background: #ffebfa;
 }
@@ -98,11 +93,12 @@ nav .sub-menu li:hover a{
 
 
 .shortcut{
-  margin: 10px;
   width: calc(100% - 600px);
   display: flex;
   flex-direction: column;
-  justify-content: space-around
+  justify-content: space-around;
+
+  padding: 20px;
 }
 .shortcut >*{
   display: flex;
@@ -125,52 +121,64 @@ nav .sub-menu li:hover a{
 
 
 
-
-
-
-
-.gallery{
-  width: 300px;
-  margin: 30px 20px;
-}
-.gallery img{
-  width: 60px;
-  height: 60px;
-  object-fit: fill;
-  border-radius: 2px;
-}
-.gallery ul{
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
-  border: 1px solid #cacaca;
-  height: 150px;
-}
-
-
-.notice{
-  width: 300px;
-  margin: 30px 10px;
-}
-.notice div{
+.tab{
+  width: 600px;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  border: 1px solid#cacaca;
-  gap: 5px;
-  height: 150px;
+
+  padding: 20px;
 }
-.notice div a{
-  margin: 1px 5px;
-}
-.notice div a+a{
-  border-top: 1px solid #ebebeb;
+.tab .tabmenu{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  top: 10px;
+  left: 20px;
 }
 
-.notice div a:hover{
-  font-weight: bold;
-  text-decoration: underline;
+.tab .tabmenu a{
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #cacaca;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+  background: #ccc;
+}
+
+
+
+
+#gallery{
+  text-align: center;
+  border: 1px solid #cacaca;
+  margin: 10px 20px;
+}
+
+#gallery ul{
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+#gallery img{
+  width: 90px;
+  height: 80px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+#gallery .index_btn{
+  padding: 7px;
+}
+
+#gallery img:hover{
+  opacity: 0.7;
+}
+
+#notice{
+  display: none;
 }
 
 
@@ -204,7 +212,7 @@ footer p{
 }
 
 
-.spot-menu{
-  display: none;
+#spot-menu{
+  position: sticky;
 }
 

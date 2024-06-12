@@ -71,22 +71,41 @@
           </div>
         </div>
       </div>
-      <div class="gallery">
-        <h2>갤러리</h2>
-        <ul>
-          <li><a href=""><img src="./data/gallery1.jpg" alt=""></a>데이지 축제</li>
-          <li><a href=""><img src="./data/gallery2.jpg" alt=""></a>코스모스 축제</li>
-          <li><a href=""><img src="./data/gallery3.jpg" alt=""></a>바다여행</li>
+      <div class="tab">
+
+        <ul class="tabmenu">
+          <li class="active">
+            <a href="#gallery">갤러리</a>
+          </li>
+          <li>
+            <a href="#notice">공지사항</a>
+          </li>
         </ul>
-      </div>
-      <div class="notice">
-        <h2>공지사항</h2>
-        <div>
-          <a href="">이벤트 참여 양식<span>2024.07.01</span></a>
-          <a href="">웹사이트 이용시 주의 사항<span>2024.07.01</span></a>
-          <a href="">혼자 떠나는 여행 신청서<span>2024.07.01</span></a>
-          <a href="">다같이 떠나는 여행 신청서<span>2024.06.30</span></a>
-          <a href="">여름을 맞이하는 자세 이벤트<span>2024.06.29</span></a>
+
+        <div class="tabcontent">
+          
+          <div id="gallery" class="active">
+            <ul>
+              <li><a href=""><img src="./data/gallery1.jpg" alt=""></a>데이지 축제</li>
+              <li><a href=""><img src="./data/gallery2.jpg" alt=""></a>코스모스 축제</li>
+              <li><a href=""><img src="./data/gallery3.jpg" alt=""></a>바다여행</li>
+              <li><a href=""><img src="./data/gallery2.jpg" alt=""></a>코스모스 축제</li>
+            </ul>
+            <div class="index_btn">
+            1,2,3,4
+            </div>
+          </div>
+
+          <div id="notice">
+            <div>
+              <a href="">이벤트 참여 양식<span>2024.07.01</span></a>
+              <a href="">웹사이트 이용시 주의 사항<span>2024.07.01</span></a>
+              <a href="">혼자 떠나는 여행 신청서<span>2024.07.01</span></a>
+              <a href="">다같이 떠나는 여행 신청서<span>2024.06.30</span></a>
+              <a href="">여름을 맞이하는 자세 이벤트<span>2024.06.29</span></a>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -115,7 +134,7 @@
   <div id="popup">
 
   </div>
-  <aside id="spot-menu">
+  <aside id="spot-menu" class="active">
     <div>
       <div>ID <div></div></div>
       <div>PASSWORD <div></div></div>
