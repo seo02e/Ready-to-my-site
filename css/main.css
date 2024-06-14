@@ -21,7 +21,7 @@ main{
 }
 header{
   display: flex;
-  height: 80px;
+  height: 70px;
 }
 .logo{
   width: 200px;
@@ -91,7 +91,6 @@ nav .sub-menu li:hover a{
   height: 250px;
 }
 
-
 .review{
   width: calc(100% - 600px);
   display: flex;
@@ -118,7 +117,6 @@ nav .sub-menu li:hover a{
   top: 10px;
   right: 10px;
   font-size: 20px;
-
 }
 .review img{
   width: 60px;
@@ -127,14 +125,6 @@ nav .sub-menu li:hover a{
 }
 
 /*-------------------------------------*/
-.tab{
-  width: 600px;
-  height: 250px;
-  overflow: hidden;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
 .tabmenu{
   display: flex;
 }
@@ -143,9 +133,15 @@ nav .sub-menu li:hover a{
   background: #ccc;
   border-radius: 5px 5px 0 0;
 }
-.tabmenu .active{
-  background: #ebebeb;
+.tab{
+  width: 600px;
+  height: 250px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
+
 
 #gallery{
   display: flex;
@@ -154,16 +150,14 @@ nav .sub-menu li:hover a{
   text-align: center;
   justify-content: space-evenly;
   flex-grow: 1;
-  
 }
 #gallery ul{
   display: flex;
   justify-content: center;
   gap: 20px;
-  
 }
 #gallery ul li{
-  padding:  0 0 10px;
+  padding: 0 0 10px;
   border: 1px solid #ebebeb;
   border-radius: 5px;
   background: #ebebeb;
@@ -176,16 +170,15 @@ nav .sub-menu li:hover a{
   transition: 0.3s;
 }
 #gallery img:hover{
+  padding: 9px;
   opacity: 0.7;
 }
-
 
 #notice{
   display: flex;
   border: 1px solid #ebebeb;
   flex-direction: column;
   flex-grow: 1;
-  display: none;
 }
 #notice li{
   padding: 5px;
@@ -203,7 +196,6 @@ nav .sub-menu li:hover a{
 #notice li:hover a{
   text-decoration: underline;
 }
-
 
 footer{
   height: 100px;
@@ -234,8 +226,6 @@ footer p{
   margin: 10px;
 }
 
-
 #spot-menu{
   position: sticky;
 }
-
