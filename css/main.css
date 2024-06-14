@@ -31,51 +31,81 @@ header{
   width: 100%;
   object-fit: fill;
 }
-
-nav{
-  border-radius: 10px 10px 0 0;
+/*----------------------------------------*/
+.main-menu{
   width: calc(100% - 200px);
-  margin: 10px 20px;
-  text-align: center;
   background: #ffebfa;
+
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
 }
-nav ul{
+.main-menu ul{
+  border-radius: 10px 10px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  
+
+}
+.main-menu>ul>li{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.main-menu a{
+  font-size: 16px;
+}
+
+
+
+
+.main-menu>ul{
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
 }
-nav ul li{
+.main-menu ul li{
   flex-grow: 1;
 }
-nav ul li+li{
-  border-left: 1px solid #333;
+.main-menu ul li+li{
+  border-left: 1.5px solid #ffabe9;
 }
-nav ul li:hover a{
-  font-weight: bold;
+.main-menuav>ul>a{
+  height: 100%;
+  font-size: 14px;
 }
 
-nav .sub-menu{
+
+.main-menu .sub-menu{
   flex-direction: column;
   background: #333;
   opacity: 0.85;
+  padding: 5px 0;
   z-index: 10;
   position: relative;
-  display: none;
 }
-nav .sub-menu a{
+.main-menu .sub-menu li{
+  border: none;
+}
+.main-menu .sub-menu a{
   margin: 10px 0;
   color: #fff;
 }
 
-nav .sub-menu li:hover a{
+.main-menu .sub-menu li:hover a{
   color: #e89696;
-  font-weight: bold;
 }
 .hidden a{
   opacity: 0;
   cursor: default;
 }
 
+
+/*---------------------------------*/
 .swapper{
   height: 400px;
   overflow: hidden;
@@ -195,7 +225,7 @@ nav .sub-menu li:hover a{
 }
 
 #notice{
-  padding: 5px;
+  margin: 5px;
 }
 #notice>div{
   display: block;
@@ -208,6 +238,10 @@ nav .sub-menu li:hover a{
 #notice a, #notice span{
   display: block;
   font-size: 13px;
+  padding: 0 5px;
+}
+#notice li:not(:last-child){
+  border-bottom: 1px solid #ebebeb;
 }
 #notice li:hover>span{
   text-decoration: underline;

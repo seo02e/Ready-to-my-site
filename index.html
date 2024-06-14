@@ -50,11 +50,13 @@
     </header>
 
     <div class="swapper">
-      <div class="slide-img">
-        <img src="./data/slide1.jpg" alt="slide 1">
-        <img src="./data/slide2.jpg" alt="slide 2">
-        <img src="./data/slide3.jpg" alt="slide 3">
-      </div>
+      <ul class="slide-img">
+        <li class="slide"><a href="#"><img src="./data/slide1.jpg" alt="slide 1"></a></li>
+        <li class="slide"><a href="#"><img src="./data/slide2.jpg" alt="slide 2"></a></li>
+        <li class="slide"><a href=""><img src="./data/slide3.jpg" alt="slide 3"></a></li>
+      </ul>
+
+      
     </div>
     <div class="contents">
       <div class="review">
@@ -91,7 +93,7 @@
         
 
         <div class="tab_wrapper">
-          <div id="gallery" >
+          <div id="gallery" class="active">
             <ul>
               <li><a href=""><img src="./data/gallery1.jpg" alt=""></a>데이지 축제</li>
               <li><a href=""><img src="./data/gallery2.jpg" alt=""></a>코스모스 축제</li>
@@ -103,7 +105,7 @@
             </div>
           </div>
 
-          <div id="notice"class="active">
+          <div id="notice">
           <div>
             <li><a href="">이벤트 참여 양식</a><span>2024.07.01</span></li>
             <li><a href="">웹사이트 이용시 주의 사항</a><span>2024.07.01</span></li>
