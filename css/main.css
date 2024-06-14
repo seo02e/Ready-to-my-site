@@ -125,78 +125,96 @@ nav .sub-menu li:hover a{
 }
 
 /*-------------------------------------*/
-.tabmenu{
-  display: flex;
-}
-.tabmenu li{
-  padding: 5px 10px;
-  background: #ccc;
-  border-radius: 5px 5px 0 0;
-}
+
+
 .tab{
   width: 600px;
   height: 250px;
   overflow: hidden;
   padding: 20px;
+  position: relative;
+}
+.tabmenu{
   display: flex;
-  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  top: 1px;
+}
+.tabmenu li{
+  padding: 5px 10px;
+  background: #ccc;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+.tabmenu li.active{
+  background: #fff;
 }
 
+.tab_wrapper{
+  border: 1px solid #ccc;
+  position: relative;
+  box-sizing: border-box;
+  height: 180px;
+}
+.tab_wrapper>div{
+  display: none;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.tab_wrapper>.active{
+  display: block;
+}
 
 #gallery{
-  display: flex;
-  border: 1px solid #ccc;
-  flex-direction: column;
+  padding: 20px;
   text-align: center;
-  justify-content: space-evenly;
-  flex-grow: 1;
 }
 #gallery ul{
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
-#gallery ul li{
-  padding: 0 0 10px;
-  border: 1px solid #ebebeb;
-  border-radius: 5px;
+#gallery li{
+  padding: 10px;
   background: #ebebeb;
 }
 #gallery img{
-  width: 100px;
-  height: 90px;
-  padding: 10px;
+  width: 90px;
+  height: 80px;
+  margin-bottom: 5px;
   border-radius: 5px;
   transition: 0.3s;
 }
+#gallery .index_btn{
+  margin-top: 15px;
+}
 #gallery img:hover{
-  padding: 9px;
   opacity: 0.7;
 }
 
 #notice{
-  display: flex;
-  border: 1px solid #ebebeb;
-  flex-direction: column;
-  flex-grow: 1;
-}
-#notice li{
   padding: 5px;
-  border-bottom: 1px solid #ebebeb;
+}
+#notice>div{
+  display: block;
+}
+#notice>div li{
   display: flex;
   justify-content: space-between;
+  padding: 5px 0;
 }
-#notice li:last-child{
-  border: none;
+#notice a, #notice span{
+  display: block;
+  font-size: 13px;
 }
-#notice li:hover{
-  font-weight: bold;
-  background: #ebebeb;
-}
-#notice li:hover a{
+#notice li:hover>span{
   text-decoration: underline;
 }
-
+#notice li:hover{
+  background: #ebebeb;
+}
 footer{
   height: 100px;
   background: #ebebeb;
@@ -227,5 +245,5 @@ footer p{
 }
 
 #spot-menu{
-  position: sticky;
+  display: none;
 }
