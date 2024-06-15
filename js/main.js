@@ -13,7 +13,7 @@ tabmenu.click(function(e){
 });
 
 /*메인메뉴 슬라이드 다운*/
-/*
+
 let mainMenu = $('.main-menu');
 let main_ul = $('.main-menu ul ul');
 mainMenu.mouseover(function(){
@@ -22,4 +22,4 @@ mainMenu.mouseover(function(){
   main_ul.stop().slideUp();
 });
 
-*/
+
