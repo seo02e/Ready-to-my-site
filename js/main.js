@@ -22,4 +22,18 @@ mainMenu.mouseover(function(){
   main_ul.stop().slideUp();
 });
 
-
+/*슬라이드*/
+let slideContainer = $('swapper');
+let slide = slideContainer.find('.slide');
+let slideCount = slide.length;
+let currentIdx = 0;
+function autoSlide(){
+  setInterval(function(){
+    let nextIdx = (currentIdx + 1) % slideCouont;
+    slideContainer.animate({
+      marginTop: -400 *nextIdx +'px'
+    });
+    currentIdx = nextIdx;
+  }, 3000);
+}
+autoSlide();
