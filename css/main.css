@@ -101,12 +101,28 @@ header{
 
 .slide-img li {
   height: 400px;
+  position: relative;
 }
 .slide-img img{
   width: 100%;
   object-fit: fill;
-
 }
+.slide-img p {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5); /* 배경색과 투명도 설정 */
+  padding: 50px;
+  bottom: 100px;
+  left: 300px;
+  right: 100px;
+  height: 150px;
+  border-radius: 15px;
+  z-index: 100;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+
 .radio-buttons {
   position: absolute;
   bottom: 10px;
@@ -125,14 +141,14 @@ header{
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: rgb(76, 76, 76);
+  background-color: rgb(186, 186, 186);
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .radio-buttons input[type="radio"]:checked + label {
-  background-color: rgb(186, 186, 186);
+  background-color: rgb(76, 76, 76);
 }
 
 /*-------------------------------------*/

@@ -47,7 +47,7 @@ function autoSlide() {
     let nextIdx = (currentIdx + 1) % slideCount;
     goToSlide(nextIdx);
     $(`.radio-buttons input[type="radio"]:eq(${nextIdx})`).prop('checked', true);
-  }, 3000);
+  }, 4000);
 }
 
 autoSlide();
