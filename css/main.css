@@ -75,7 +75,7 @@ header{
   padding-bottom: 15px;
 }
 .sub-menu a:hover{
-  color: #fabebe;
+  color: #fe9d9d;
 }
 
 
@@ -323,19 +323,27 @@ footer p{
   top: 70px;
   width: 200px;
   z-index: 50;
+  background-image: url('../data/그림1.png');
+  border-radius: 0 10px 10px 0;
+  border: 2px solid #fff;
 }
 #spot-menu .input{
   display: flex;
   flex-direction: column;
   gap: 20px;
   background: #fdfdfd;
+  opacity: 0.8;
   border-radius: 5px;
   padding: 50px 20px;
-  margin: 5px;
+  margin: 20px;
+
+
+
+  
 }
 #spot-menu .input div{
   position: relative;
-  color: #525252;
+  color: #000000;
 }
 #spot-menu .input input[type="text"]{
   all: initial;
