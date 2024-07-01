@@ -313,7 +313,36 @@ footer li:hover{
 footer p{
   margin: 10px;
 }
-
+/*-------------------------------------*/
 #spot-menu{
-  display: none;
+  position: sticky;
+  z-index: 40;
+}
+#spot-menu .fixed{
+  position: fixed;
+  top: 70px;
+  width: 200px;
+  z-index: 50;
+}
+#spot-menu .input{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fdfdfd;
+  border-radius: 5px;
+  padding: 50px 20px;
+  margin: 5px;
+}
+#spot-menu .input div{
+  position: relative;
+  color: #525252;
+}
+#spot-menu .input input[type="text"]{
+  all: initial;
+  font-size: 14px;
+  background: #b0b0b0;
+  padding: 2px;
+  position:absolute;
+  right: -10%;
+  width: 70%;
 }
