@@ -1,5 +1,16 @@
 @charset "utf-8";
-
+@font-face {
+  font-family: 'HSGyeoulNoonkott20';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HSGyeoulNoonkott20.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HSGooltokki';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/HSGooltokki.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 *{
   box-sizing: border-box;
   font-size: 10px;
@@ -110,16 +121,17 @@ header{
 .slide-img p {
   position: absolute;
   background: rgba(255, 255, 255, 0.5); /* 배경색과 투명도 설정 */
-  padding: 50px;
+  padding: 40px 50px;
   bottom: 100px;
   left: 300px;
   right: 100px;
   height: 150px;
   border-radius: 15px;
   z-index: 100;
-  font-size: 15px;
+  font-size: 30px;
   text-align: center;
   font-weight: 500;
+  font-family: 'HSGooltokki';
 }
 
 
@@ -157,7 +169,36 @@ header{
   height: 250px;
 }
 
-.review{
+.login{
+  width: calc(100% - 900px);
+  display: flex;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.login .profile img{
+  width: 80px;
+  height: 80px;
+}
+
+.login .border{
+  width: 300px;
+  padding: 20px;
+  margin: 20px 10px;
+  border: 1px solid #ccc;
+  display: flex;
+
+}
+
+.login .profile_information{
+  position: absolute;
+  bottom: 40px;
+  left: 150px;
+}
+.login .profile_information div{
+  display: inline;
+}
+/*.review{
   width: calc(100% - 600px);
   display: flex;
   padding: 20px;
@@ -189,12 +230,14 @@ header{
   height: 60px;
   border-radius: 5px;
 }
+*/
+
 
 /*-------------------------------------*/
 
 
 .tab{
-  width: 600px;
+  width: 900px;
   height: 250px;
   overflow: hidden;
   padding: 20px;
@@ -314,7 +357,7 @@ footer p{
   margin: 10px;
 }
 /*-------------------------------------*/
-#spot-menu{
+/*#spot-menu{
   position: sticky;
   z-index: 40;
 }
@@ -353,4 +396,4 @@ footer p{
   position:absolute;
   right: -10%;
   width: 70%;
-}
+}*/
